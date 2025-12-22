@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Wrapper */
+.creation-wrapper2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #fff, #e63edb, #5cd0ed);
+}
+
+/* Container */
+.container2 {
+  width: 90%;
+  max-width: 360px;
+  height: clamp(300px, 70vh, 500px);
+  box-shadow: 1px 3px 50px #3ce8eb;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #27f415 7%,
+    #d53e7a 25%,
+    #78bbe0 40%,
+    #f2ff00 60%
+  );
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Rotation animation */
+.myrotate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 10% 10%;
+  animation: circle1 4s ease-out 1 forwards;
+}
+@keyframes circle1 {
+  0% { transform: rotate3d(1, 1, 1, 1440deg); background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Logo */
+.logo2 {
+  width: 80%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo2 h1 {
+  font-weight: bold;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  text-align: center;
+  color: black;
+}
+
+.logo2 img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 5px 6px #000);
+  animation: logomove2 5s ease-in-out infinite;
+}
+
+@keyframes logomove2 {
+  0% { transform: translateX(10px); }
+  50% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+/* Word box */
+.word {
+  width: 90%;
+  max-width: 170px;
+  min-height: 120px;
+  padding: 1rem 0.5rem 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f561d5;
+  font-weight: bold;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  border-radius: 10px;
+  box-shadow: -1px 2px 11px #000;
+  position: relative;
+  margin-top: 1rem;
+}
+
+/* Form elements */
+.word label {
+  align-self: flex-start;
+  margin-bottom: 0.3rem;
+}
+
+.word input {
+  width: 90%;
+  max-width: 160px;
+  padding: 0.3rem;
+  border: 1px dashed #000;
+  border-radius: 5px;
+}
+
+/* Submit button */
+.subtbtn {
+  border: 2px solid black;
+  font-weight: bold;
+  color: #00f;
+  border-radius: 25px;
+  padding: 0.5em 1.2em;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+
+.subtbtn:hover {
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
+  transform: scale(0.9);
+  background-color: #c747dd;
+}
+
+/* Error message */
+.error3 {
+  font-size: 0.9rem;
+  color: red;
+  text-shadow: 1px 1px 3px black;
+  margin-top: 0.3rem;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .container2 {
+    height: clamp(280px, 80vh, 400px);
+  }
+  .word {
+    width: 95%;
+    min-height: 100px;
+  }
+  .logo2 img {
+    width: 90%;
+  }
+  .subtbtn {
+    padding: 0.4em 1em;
+  }
+}

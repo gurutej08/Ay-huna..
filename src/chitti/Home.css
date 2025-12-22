@@ -1,0 +1,202 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.creation{
+    border: 2px solid black;
+    border-radius:10px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f7fa;  /* Light ash base */
+    background-image:
+        /* Blue grid lines */
+        linear-gradient(rgba(26, 34, 126, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26, 34, 126, 0.05) 1px, transparent 1px),
+        
+        /* Color accents */
+        radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.15) 0%, transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(200, 30, 50, 0.15) 0%, transparent 25%);
+    
+    background-size: 
+        40px 40px,  /* Grid size */
+        40px 40px,
+        200px 200px, /* Yellow accent size */
+        200px 200px; /* Red accent size */
+        flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: -1px 1px 20px rgb(72, 72, 185);
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    
+}
+.logo{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo img{
+    filter:drop-shadow(2px 5px 6px black);
+    width:250px;
+    height: 200px;
+    border-radius: 50%;
+    animation:logomove 5s ease-in-out infinite ;
+}
+@keyframes logomove {
+    0%{
+        transform: translate(10px);
+    }
+    50%{
+        transform: translate(-10px);
+    }
+    100%{
+        transform:translate(10px) ;
+    }
+}
+.main-buttons{
+    width:fit-content;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.btnjoin{
+    border: black 2px solid;
+    border-radius: 25px;
+    padding: 12px 20px 12px 20px;
+    color:red;
+    font-weight: bold;
+    transition: all;
+    transition-duration: .5s;
+     background: rgb(255, 255, 0);
+}
+.btncreate{
+    border: black 2px solid;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 12px 28px 12px 28px;
+    transition: all;
+    transition-duration: .5s;
+    background: rgb(255, 255, 0);
+}
+.quote{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    opacity: 1;
+    animation-name: moving;
+    animation-timing-function:ease forwards;
+    animation-duration: 1s;
+    
+}
+@keyframes moving {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.btncreate:hover{
+    cursor:pointer;
+    color: white;
+    border: 2px solid white;
+    transform: scale(.9);
+    background-color: rgb(199, 71, 221);
+}
+.btnjoin:hover{
+    cursor:pointer;
+    color: white;
+    border: 2px solid white;
+    transform: scale(.9);
+    background-color: rgb(106, 246, 63);
+}
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .main-buttons {
+        height: auto;
+        gap: 15px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .creation {
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+        height: auto;
+        box-shadow: -1px 1px 15px rgb(72, 72, 185);
+    }
+
+    .logo img {
+        width: 160px;
+        height: 130px;
+    }
+
+    .btnjoin,
+    .btncreate {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .quote {
+        font-size: 14px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+    .logo img {
+        width: 140px;
+        height: 120px;
+    }
+
+    .btnjoin,
+    .btncreate {
+        font-size: 13px;
+    }
+}

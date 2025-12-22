@@ -1,0 +1,201 @@
+/* Reset default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full-page wrapper */
+.waiting-wrapper {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #800080, #c98691);
+}
+
+/* The waiting room container */
+.waiting-container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 0 20px #4eb5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo styling */
+.waiting-container .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.waiting-container .logo img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.waiting-container .logo h1 {
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Waiting room title */
+.waiting-container h2 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Room code */
+.waiting-container h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Players list */
+.players-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Individual player cards */
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(203, 26, 26, 0.3);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #000;
+  box-shadow: 1px 1px 5px #000;
+  transition: transform 0.2s;
+}
+
+.player:hover {
+  transform: scale(1.05);
+}
+
+/* Highlight "You" player */
+.player span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+/* Waiting text */
+.waiting-container p {
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px #000;
+  margin-top: 10px;
+}
+/* ================= RESPONSIVE ONLY ================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .waiting-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .waiting-container .logo h1 {
+    font-size: 24px;
+  }
+
+  .waiting-container h2 {
+    font-size: 22px;
+  }
+
+  .waiting-container h3 {
+    font-size: 16px;
+  }
+
+  .player {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .waiting-wrapper {
+    padding: 10px;
+  }
+
+  .waiting-container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .waiting-container .logo img {
+    width: 60px;
+  }
+
+  .waiting-container .logo h1 {
+    font-size: 20px;
+  }
+
+  .waiting-container h2 {
+    font-size: 20px;
+  }
+
+  .waiting-container h3 {
+    font-size: 15px;
+  }
+
+  .players-list {
+    gap: 8px;
+  }
+
+  .player {
+    font-size: 13px;
+  }
+
+  .waiting-container p {
+    font-size: 14px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  .waiting-container {
+    padding: 15px;
+  }
+
+  .waiting-container .logo h1 {
+    font-size: 18px;
+  }
+
+  .waiting-container h2 {
+    font-size: 18px;
+  }
+
+  .player {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+
+
