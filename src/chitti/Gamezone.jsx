@@ -68,7 +68,7 @@ const Gamezone = () => {
   useEffect(() => {
     if (!player || !roomcode) return;
 
-    socketRef.current = io("http://localhost:3000");
+    socketRef.current = io("https://ayhuna-backend.onrender.com");
 
     socketRef.current.on("connect", () => {
       socketRef.current.emit("join-room", { player, roomcode });

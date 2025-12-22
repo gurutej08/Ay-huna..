@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form'
 import pointingman1 from '../assets/pointingman1.png'
 import io from "socket.io-client";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://ayhuna-backend.onrender.com");
 
 const Lobby = () => {
   const navigate=useNavigate()

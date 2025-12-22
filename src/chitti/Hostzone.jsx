@@ -16,7 +16,7 @@ const Hostzone = () => {
   } = useForm();
 
   useEffect(() => {
-    socketRef.current = io("http://localhost:3000");
+    socketRef.current = io("https://ayhuna-backend.onrender.com");
 
     socketRef.current.on("connect", () => {
       console.log("Connected:", socketRef.current.id);

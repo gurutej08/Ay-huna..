@@ -17,7 +17,7 @@ const Waiting = () => {
 
   useEffect(() => {
     // Create socket only once
-    socketRef.current = io("http://localhost:3000");
+    socketRef.current = io("https://ayhuna-backend.onrender.com");
 
     // Emit join-room only after connection
     socketRef.current.on("connect", () => {
