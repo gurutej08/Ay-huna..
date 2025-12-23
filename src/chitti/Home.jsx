@@ -57,6 +57,9 @@ const Home = () => {
         </div>
         
     </div>
+    <footer className='homefooter'>
+          © {new Date().getFullYear()} Gurutej. All rights reserved.
+    </footer>
     </div>
   )
 }

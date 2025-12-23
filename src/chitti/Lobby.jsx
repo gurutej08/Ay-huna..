@@ -109,6 +109,9 @@ const {
         </div>
       </div>
     </div>
+    <footer className='lobbyfooter'>
+          © {new Date().getFullYear()} Gurutej. All rights reserved.
+    </footer>
     </div>
   )
 }

@@ -152,7 +152,10 @@ const Gamezone = () => {
               <div className="player-info">
                 [number of chitti's with in the player:
                 {Myplayers?.[0]?.chitti?.length}]
+                <div className= {Myplayers?.[0]?.chitti?.length === 5?"greendot":"nogreendot"}>
+                </div>
               </div>
+              
             </div>
 
             <div className="two">
@@ -163,6 +166,8 @@ const Gamezone = () => {
               <div className="player-info">
                 [number of chitti's with in the player:
                 {Myplayers?.[1]?.chitti?.length}]
+                 <div className= {Myplayers?.[1]?.chitti?.length === 5?"greendot":"nogreendot"}>
+                </div>
               </div>
             </div>
           </div>
@@ -176,6 +181,8 @@ const Gamezone = () => {
               <div className="player-info">
                 [number of chitti's with in the player:
                 {Myplayers?.[2]?.chitti?.length}]
+               <div className= {Myplayers?.[2]?.chitti?.length === 5?"greendot":"nogreendot"}>
+                </div>
               </div>
             </div>
 
@@ -187,6 +194,8 @@ const Gamezone = () => {
               <div className="player-info">
                 [number of chitti's with in the player:
                 {Myplayers?.[3]?.chitti?.length}]
+                <div className= {Myplayers?.[3]?.chitti?.length === 5?"greendot":"nogreendot"}>
+                </div>
               </div>
             </div>
           </div>
@@ -258,6 +267,9 @@ const Gamezone = () => {
           </>
         </div>
       </div>
+      <footer className='gamezonefooter'>
+          © {new Date().getFullYear()} Gurutej. All rights reserved.
+    </footer>
     </div>
   );
 };

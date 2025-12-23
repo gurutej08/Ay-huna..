@@ -169,3 +169,13 @@
     padding: 0.4em 1em;
   }
 }
+.creationfooter{
+    position: absolute;
+    text-align: "center";
+    font-size: 12px;
+    color: "#777";
+    margin-top: "10px";
+    padding-bottom: "5px";
+    bottom:50px;
+}
+

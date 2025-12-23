@@ -462,3 +462,13 @@
 }
 
 }
+.hostzonefooter{
+    position: absolute;
+    text-align: "center";
+    font-size: 12px;
+    color: white;
+    margin-top: "10px";
+    padding-bottom: "5px";
+    bottom:50px;
+}
+

@@ -443,6 +443,8 @@
   font-size: 2rem;
 }
 
+
+
 /* General media query for devices <= 768px */
 @media (max-width: 768px) {
   .container3 {
@@ -503,17 +505,17 @@
   }
 
   .pass{
-    top: 55px;
-    right: 45px;
+    top: 44px;
+    right: 55px;
     width: 120px;
   }
   .nopass{
-    top: 55px;
-    right: 45px;
+    top: 44px;
+    right: 55px;
     width: 120px;
   }
   .hide{
-    top: 55px;
+    top: 45px;
     left: 50px;
   }
 
@@ -567,4 +569,22 @@
 
 .gameover-overlay h2 {
   font-size: 2rem;
+}
+.gamezonefooter{
+    position: absolute;
+    text-align: "center";
+    font-size: 12px;
+    color: "#777";
+    margin-top: "10px";
+    padding-bottom: "5px";
+    bottom:20px;
+}
+.greendot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(43, 68, 5);
+}
+.nogreendot{
+  opacity: 0;
 }

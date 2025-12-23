@@ -114,6 +114,9 @@ const Hostzone = () => {
       <div className="play">play</div>
 
       <div className="exchange">exchange</div>
+      <footer className='hostzonefooter'>
+          © {new Date().getFullYear()} Gurutej. All rights reserved.
+    </footer>
     </div>
   );
 };
