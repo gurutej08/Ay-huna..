@@ -76,8 +76,8 @@ const {
       </div>
       <form  className='lobby-form' onSubmit={handleSubmit(submitform)}>
         <div className="playername">
-          <label className='labels'>Enter Player Name:</label>
-          <input className='inpt2' type="text" onClick={handleclick1} style={{...Inputcolor1, ...a1}} placeholder='GURU VARUN TEJ'
+          <label className='labels'>Enter your Name:</label>
+          <input className='inpt2' type="text" onClick={handleclick1} style={{...Inputcolor1, ...a1}} placeholder='example: varun'
           {...register('playername',{required: true ,
           minLength:{value:4,message:"name should have min 4 character"},
           pattern: { value: /^[A-Za-z]+$/, message: "only alphabets allowed" }
@@ -85,7 +85,7 @@ const {
           {errors.playername && <p className='error1'>{errors.playername.message}</p>}
         </div>
         <div className="room-code">
-          <label className='labels'>Enter Your Room Code:</label>
+          <label className='labels'>Enter Room Code:</label>
           <input className='inpt1' onClick={handleclick} style={{ ...Inputcolor, ...a}} type="text" placeholder='123456'
           {...register('roomcode',{ required: true,
           pattern: { value: /^[0-9]{6}$/, message: "room code must be 6 digits" }
