@@ -69,7 +69,7 @@ const Waiting = () => {
         </ul>
       </div>
       <footer className='waitingfooter'>
-          © {new Date().getFullYear()} Gurutej. All rights reserved.
+          © {new Date().getFullYear()} varun. All rights reserved.
     </footer>
     </div>
   );

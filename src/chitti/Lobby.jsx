@@ -110,7 +110,7 @@ const {
       </div>
     </div>
     <footer className='lobbyfooter'>
-          © {new Date().getFullYear()} Gurutej. All rights reserved.
+          © {new Date().getFullYear()} varun. All rights reserved.
     </footer>
     </div>
   )

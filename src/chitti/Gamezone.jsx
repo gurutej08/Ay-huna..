@@ -268,7 +268,7 @@ const Gamezone = () => {
         </div>
       </div>
       <footer className='gamezonefooter'>
-          © {new Date().getFullYear()} Gurutej. All rights reserved.
+          © {new Date().getFullYear()} varun. All rights reserved.
     </footer>
     </div>
   );

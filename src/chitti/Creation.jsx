@@ -96,7 +96,7 @@ const Creation = () => {
         </div>
       </div>
       <footer className='creationfooter'>
-          © {new Date().getFullYear()} Gurutej. All rights reserved.
+          © {new Date().getFullYear()} varun. All rights reserved.
     </footer>
 
     </div>
