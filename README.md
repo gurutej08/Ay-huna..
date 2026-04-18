@@ -16,16 +16,16 @@ https://ayhuna-backend.onrender.com
 
 
 ## Frontend
-  **React (Vite)**
-  **JavaScript**
-  **HTML5**
-  **CSS3**
+  **React (Vite)**,
+  **JavaScript**,
+  **HTML5**,
+  **CSS3**,
   **Socket.io Client**
 
 ## Backend
-  **Node.js**
-  **Express.js**
-  **Socket.io**
+  **Node.js**,
+  **Express.js**,
+  **Socket.io**,
   **CORS**
 
   
