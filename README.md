@@ -22,10 +22,10 @@ https://ayhuna-backend.onrender.com
   **Socket.io Client**  
 
 ## Backend
-  **Node.js**,
-  **Express.js**,
-  **Socket.io**,
-  **CORS**
+  **Node.js**  
+  **Express.js**  
+  **Socket.io**  
+  **CORS**  
 
   ---
 ## Project Repositories
