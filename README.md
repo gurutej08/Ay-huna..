@@ -9,7 +9,7 @@ https://ay-hunna.vercel.app/
 
 ## Backend (Server API & Socket)
 
-https://your-backend-url.onrender.com
+https://ayhuna-backend.onrender.com
 
 
 ## Tech Stack
@@ -62,9 +62,9 @@ Frontend connects using:
 
 import { io } from "socket.io-client";
 
-const socket = io("https://");
+const socket = io("https://ayhuna-backend.onrender.com");
 
-Backend listens for events like:
+
 
 
 ## Local Development Setup
