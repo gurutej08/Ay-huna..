@@ -27,7 +27,7 @@ https://ayhuna-backend.onrender.com
   **Socket.io**,
   **CORS**
 
-  
+  ---
 ## Project Repositories
 
 **Frontend Repo**
@@ -36,6 +36,8 @@ https://ayhuna-backend.onrender.com
 **Backend Repo**
   https://github.com/gurutej08/Ayhuna-backend
 
+  ---
+  
 ## Features
     Real-time multiplayer gameplay
     Room creation & joining system
@@ -54,6 +56,8 @@ When a player makes a move, the action is sent to the server.
 The server processes the move and updates the game state.
 The updated state is instantly broadcast to all players in that room.
 Every player's UI refreshes in real time — ensuring everyone sees the same game state.
+
+---
 
 ## Frontend-Backend Connection
 
