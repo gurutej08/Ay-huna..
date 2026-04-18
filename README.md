@@ -74,13 +74,13 @@ git clone https://github.com/gurutej08/Ay-huna.git
 git clone https://github.com/gurutej08/Ayhuna-backend.git
 
 ## Run Backend(cmd)
-cd Ayhuna-backend
-npm install
-node server.js
+    cd Ayhuna-backend
+    npm install
+    node server.js
 ## Run Frontend(cmd)
-cd Ay-huna
-npm install
-npm run dev
+    cd Ay-huna
+    npm install
+    npm run dev
 
  **Frontend runs on:**
 
