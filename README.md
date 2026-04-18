@@ -83,7 +83,6 @@ git clone https://github.com/gurutej08/Ayhuna-backend.git
     npm run dev
 
  **Frontend runs on:**
-
 http://localhost:5173
 
 **Backend runs on:**
