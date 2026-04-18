@@ -4,10 +4,10 @@ Real-Time Multiplayer Web Game
 Ay-Huna is a real-time multiplayer card-style web game built using modern web technologies.
 Players can create rooms, join matches, and play turn-based gameplay with live synchronization.
 
-**Frontend**
+**Frontend :**
 https://ay-hunna.vercel.app/
 
-**Backend (Server API & Socket)**
+**Backend (Server API & Socket) :**
 https://ayhuna-backend.onrender.com
 
 
@@ -15,11 +15,11 @@ https://ayhuna-backend.onrender.com
 
 
 ## Frontend
-  **React (Vite)**,
-  **JavaScript**,
-  **HTML5**,
-  **CSS3**,
-  **Socket.io Client**
+  **React (Vite)**  
+  **JavaScript**  
+  **HTML5**  
+  **CSS3**  
+  **Socket.io Client**  
 
 ## Backend
   **Node.js**,
